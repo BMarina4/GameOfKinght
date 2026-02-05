@@ -3,13 +3,11 @@
 `GameOfKnight` is a 2D action-platformer developed in **Java** using the **Processing** library. It features a knight protagonist with fluid animations, gravity-based physics, and a chasing AI enemy.
 
 
+## 🎮 Game Overview
+In this game, you play as a knight who must navigate a platform to reach a hidden treasure while being pursued by a relentless ghost. The game demonstrates core programming concepts such as **state management**, **collision detection**, and **sprite sheet manipulation**.
 <p align="center">
   <img src="assets/gameKinght.gif" alt="Gameplay demo preview" width="600"/>
 </p>
-
-## 🎮 Game Overview
-In this game, you play as a knight who must navigate a platform to reach a hidden treasure while being pursued by a relentless ghost. The game demonstrates core programming concepts such as **state management**, **collision detection**, and **sprite sheet manipulation**.
-
 ### 🎯 Objective
 * **Win:** Reach the treasure chest (**Cofre**).
 * **Lose:** Get touched by the ghost (**Fantasma**) without attacking.
