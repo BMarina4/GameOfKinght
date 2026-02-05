@@ -1,89 +1,74 @@
-⚔️ GameOfKnight
+# ⚔️ GameOfKnight
 
-GameOfKnight is a 2D action-platformer game developed in Java using the Processing library. It features a knight protagonist with animated movement, gravity physics, an AI-controlled enemy, and a treasure-hunting objective.
-🕹️ GamePlay
+`GameOfKnight` is a 2D action-platformer developed in **Java** using the **Processing** library. It features a knight protagonist with fluid animations, gravity-based physics, and a chasing AI enemy.
 
-GameOfKnight puts you in control of a brave knight navigating a dangerous landscape. You must manage your movement and combat skills to reach the treasure while avoiding or defeating a persistent ghost enemy.
-🎯 Objective
 
-Navigate across the screen to reach the Cofre (Treasure) to win. Be careful: if the enemy touches you, it's Game Over!
-🖱️ How to play
 
-    Movement: Use the keys to run across the battlefield.
+## 🎮 Game Overview
+In this game, you play as a knight who must navigate a platform to reach a hidden treasure while being pursued by a relentless ghost. The game demonstrates core programming concepts such as **state management**, **collision detection**, and **sprite sheet manipulation**.
 
-    Combat: If you are close to the enemy, use the Spacebar to defeat it and remove it from the game.
+### 🎯 Objective
+* **Win:** Reach the treasure chest (**Cofre**).
+* **Lose:** Get touched by the ghost (**Fantasma**) without attacking.
 
-    Gravity: The game features realistic jumping and falling mechanics.
+### 🕹️ Controls
+| Action | Key |
+| :--- | :--- |
+| **Move Left** | `A` or `Left Arrow` |
+| **Move Right** | `D` or `Right Arrow` |
+| **Jump** | `W`, `Up Arrow` (Only when on ground) |
+| **Attack** | `Spacebar` |
+| **Restart** | `R` (After Game Over or Victory) |
 
-    Restart: If you win or lose, press 'R' to try again.
+---
 
-🎮 Controls
+## 🚀 Key Technical Features
 
-    W / Up Arrow → Jump
+### 1. Sprite Sheet Animation
+The game utilizes custom sprite sheets (`knight.png` and `knight3.png`). The code programmatically slices these sheets to create distinct animations for:
+* **Idle:** Static poses based on the last direction faced.
+* **Running:** A 4-frame loop that triggers when moving.
+* **Attacking:** A high-speed 4-frame combat animation.
 
-    A / Left Arrow → Move Left
+### 2. Physics & Mechanics
+* **Gravity Engine:** Implements a `gravedad` variable and `velocidadY` to simulate realistic falling and jumping.
+* **Collision Detection:** Uses distance-based logic (`dist()`) to determine interactions between the player, the enemy, and the treasure.
 
-    D / Right Arrow → Move Right
+### 3. Enemy AI
+* **Targeting:** The enemy uses a basic chase algorithm, constantly adjusting its coordinates to follow the player's position.
 
-    Spacebar → Attack / Strike
+---
 
-    R → Restart Game
+## 🛠️ Technologies Used
+* **Java**: Core logic and object-oriented structure.
+* **Processing (PApplet)**: Rendering engine and input handling.
+* **NetBeans/IntelliJ**: Recommended IDEs for execution.
 
-🏆 Game Conditions
+---
 
-    Victory: Reach the treasure chest.
+## ▶️ Setup and Execution
+1.  **Clone the Repository:**
+    ```bash
+    git clone [https://github.com/BMarina4/GameOfKnight.git](https://github.com/BMarina4/GameOfKnight.git)
+    ```
+2.  **Project Structure:**
+    Ensure your directory looks like this so the code can find the images:
+    ```text
+    ├── src/
+    │   └── juego/GameOfKnight.java
+    └── imagenes/
+        ├── knight.png
+        ├── knight3.png
+        ├── fondo3.jpg
+        ├── fantasma.png
+        └── cofre.png
+    ```
+3.  **Run:** Open the project in your Java IDE and run the `main` method in `GameOfKnight.java`.
 
-    Defeat: Colliding with the enemy without attacking.
+---
 
-🎮 Features
-
-    🗺️ Dynamic Environment: Custom background and scaled sprites for an immersive experience.
-
-    🏃 Advanced Sprite Animation: Multi-frame animations for running and attacking, with directional facing (left/right).
-
-    👻 Enemy IA: A ghost enemy that actively chases the player's position.
-
-    ⚖️ Physics Engine: Implementation of gravity, acceleration, and floor collision.
-
-    🧠 State System: * Playing State: Active gameplay.
-
-        Victory Screen: Green-themed celebration.
-
-        Game Over Screen: Red-themed defeat screen.
-
-🛠 Technologies Used
-
-    Java (Core logic)
-
-    Processing Core (Graphics and Event Handling)
-
-    PApplet (Application framework)
-
-▶️ How to run the project
-
-    Clone the repository:
-    Bash
-
-    git clone https://github.com/BMarina4/GameOfKnight.git
-
-    Asset Setup: Ensure your project structure includes an imagenes/ folder with the following files:
-
-        knight.png & knight3.png (Sprite sheets)
-
-        fondo3.jpg (Background)
-
-        fantasma.png (Enemy)
-
-        cofre.png (Treasure)
-
-    Run the application: Execute the main method in the GameOfKnight class.
-
-📬 Contact
-
-Feel free to reach out for collaboration or questions about the code!
-
-    Name: Marina Benach Vilasís
-
-    Email: marinabenvil@monlau.com
-
-    GitHub: @BMarina4
+## 📬 Contact
+**Marina Benach Vilasís** 
+* **Role:** Student of Web Application Development (DAW) at Monlau.
+* **Email:** [marinabenvil@monlau.com](mailto:marinabenvil@monlau.com).
+* **GitHub:** [BMarina4](https://github.com/BMarina4).
