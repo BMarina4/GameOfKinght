@@ -5,9 +5,11 @@
 
 ## 🎮 Game Overview
 In this game, you play as a knight who must navigate a platform to reach a hidden treasure while being pursued by a relentless ghost. The game demonstrates core programming concepts such as **state management**, **collision detection**, and **sprite sheet manipulation**.
+
 <p align="center">
-  <img src="assets/gameKinght.gif" alt="Gameplay demo preview" width="600"/>
+  <img src="assets/gameKnight.gif" alt="Gameplay demo preview" width="600"/>
 </p>
+
 ### 🎯 Objective
 * **Win:** Reach the treasure chest (**Cofre**).
 * **Lose:** Get touched by the ghost (**Fantasma**) without attacking.
